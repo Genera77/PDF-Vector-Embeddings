@@ -84,6 +84,6 @@ def process_pdf_and_store_embeddings(pdf_path):
     pdf_id = os.path.basename(pdf_path).split('.')[0]
     upsert_to_pinecone(pdf_id, embeddings, text_chunks, title, author)
 
-# Example usage
-pdf_path = r'C:\Users\jquin\B Lab\Vectors\pdf\THE-SEMINAR-OF-JACQUES-LACAN-VI_desir_et_interp-.pdf'
+# Example usage (add your own file path)
+pdf_path = r'C:B Lab\Vectors\pdf\THE-SEMINAR-OF-JACQUES-LACAN-VI_desir_et_interp-.pdf'
 process_pdf_and_store_embeddings(pdf_path)
